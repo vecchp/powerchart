@@ -2,6 +2,7 @@
 
 # Encryption and Decryption of TP-Link Smart Home Protocol
 # XOR Autokey Cipher with starting key = 171
+# https://en.wikipedia.org/wiki/Autokey_cipher
 def encrypt_message(message: str) -> bytearray:
     ciphertext = bytearray('\0\0\0\0', 'ascii')
     key = 0xAB
